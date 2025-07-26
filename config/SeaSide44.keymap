@@ -27,6 +27,13 @@
             bindings = <&kp AT_SIGN &kp LS(GRAVE)>;
             label = "TO_LAYER_0";
         };
+
+        jis_hyphen: jis_hyphen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp EQUAL>;
+            label = "JIS_HYPHEN";
+        };
     };
 
     behaviors {
