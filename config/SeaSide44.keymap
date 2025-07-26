@@ -34,6 +34,21 @@
             bindings = <&kp MINUS &kp EQUAL>;
             label = "JIS_HYPHEN";
         };
+
+        jis_semicolon: jis_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON &kp PLUS>, <&macro_press>;
+
+            label = "JIS_SEMICOLON";
+        };
+
+        jis_colon: jis_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp LS(ASTERISK)>;
+            label = "JIS_COLON";
+        };
     };
 
     behaviors {
