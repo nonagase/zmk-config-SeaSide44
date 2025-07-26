@@ -50,10 +50,10 @@
             label = "JIS_COLON";
         };
 
-        jis_left_bracket: jis_left_bracket {
+        jis_back_slash: jis_left_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp NON_US_BACKSLASH &kp LS(UNDERSCORE)>;
             label = "JIS_LEFT_BRACKET";
         };
     };
