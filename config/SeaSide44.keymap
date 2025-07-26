@@ -53,7 +53,7 @@
         jis_back_slash: jis_left_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NON_US_BACKSLASH &kp LS(UNDERSCORE)>;
+            bindings = <&kp BACKSLASH &kp LS(UNDERSCORE)>;
             label = "JIS_LEFT_BRACKET";
         };
     };
